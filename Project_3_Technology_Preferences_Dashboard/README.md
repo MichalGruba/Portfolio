@@ -1,28 +1,28 @@
-# Analiza preferencji technologicznych
+# Analysis of Technology Preferences
 
-## Opis projektu:
-Projekt analizuje preferencje technologiczne respondentów, wykorzystując platformę **IBM Cognos Analytics**. Badanie obejmuje języki programowania, bazy danych, platformy oraz frameworki webowe, które użytkownicy obecnie używają lub chcą poznać w przyszłości. Dodatkowo uwzględniono dane demograficzne, takie jak wiek, wykształcenie i lokalizacja respondentów.
+## Project Description:
+This project analyzes the technology preferences of respondents using the **IBM Cognos Analytics** platform. The study covers programming languages, databases, platforms, and web frameworks that users currently use or want to learn in the future. Additionally, demographic data such as age, education, and location of respondents were included.
 
-## Cel:
-Celem projektu było zidentyfikowanie najpopularniejszych technologii oraz trendów w preferencjach technologicznych.
+## Objective:
+The main goal of the project was to identify the most popular technologies and trends in technology preferences.
 
-## Użyte narzędzia:
-- **IBM Cognos Analytics**: Do tworzenia interaktywnych dashboardów.
+## Tools Used:
+- **IBM Cognos Analytics**: For creating interactive dashboards.
 
-## Kluczowe wnioski:
+## Key Insights:
 
-### 1. Najczęściej używane technologie:
-- **Języki**: HTML/CSS, JavaScript, TypeScript.
-- **Bazy danych**: PostgreSQL, Microsoft SQL Server.
-- **Platformy**: AWS.
-- **Frameworki**: React, Spring Boot.
+### 1. Most Commonly Used Technologies:
+- **Languages**: HTML/CSS, JavaScript, TypeScript.
+- **Databases**: PostgreSQL, Microsoft SQL Server.
+- **Platforms**: AWS.
+- **Frameworks**: React, Spring Boot.
 
-### 2. Preferencje na przyszłość:
-- **Języki**: Python, TypeScript.
-- **Bazy danych**: PostgreSQL, MongoDB.
-- **Platformy**: AWS, Microsoft Azure.
+### 2. Future Preferences:
+- **Languages**: Python, TypeScript.
+- **Databases**: PostgreSQL, MongoDB.
+- **Platforms**: AWS, Microsoft Azure.
 
-### 3. Demografia:
-- **Wiek**: 25-34 lata.
-- **Wykształcenie**: Licencjat/magister.
-- **Lokalizacja**: Globalna.
+### 3. Demographics:
+- **Age**: 25-34 years.
+- **Education**: Bachelor's/Master's degree.
+- **Location**: Global.
