@@ -7,7 +7,7 @@ This project involves the analysis of car sales data. It includes information ab
 The main goal was to investigate which brands and models are the most profitable and what factors influence resale value.
 
 ## Tools Used
-- **Excel**: For data analysis and creating visualizations. .
+- **Excel**: For data analysis and creating visualizations.
 
 ## Key Insights
 
