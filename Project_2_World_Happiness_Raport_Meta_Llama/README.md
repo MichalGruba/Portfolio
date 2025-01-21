@@ -1,29 +1,29 @@
-# Analiza World Happiness Report - 2016
+# World Happiness Report Analysis - 2016
 
-## Opis projektu:
-Ten projekt to analiza danych z **World Happiness Report** za rok 2016. Zawiera informacje o poziomie szczęścia w różnych krajach, uwzględniając takie czynniki jak PKB per capita, wsparcie społeczne, oczekiwana długość życia, wolność, hojność oraz poziom korupcji.
+## Project Description:
+This project involves the analysis of data from the **World Happiness Report** for the year 2016. It includes information about happiness levels in various countries, considering factors such as GDP per capita, social support, life expectancy, freedom, generosity, and corruption levels.
 
-## Cel:
-Głównym celem projektu było zbadanie, które kraje są najszczęśliwsze oraz jakie czynniki mają największy wpływ na poziom szczęścia. Dodatkowo, projekt miał na celu wizualizację danych w celu lepszego zrozumienia zależności między różnymi wskaźnikami.
+## Objective:
+The project's main goal was to investigate which countries are the happiest and which factors impact happiness levels most. Additionally, the project aimed to visualize the data to understand the relationships between different indicators better.
 
-## Użyte narzędzia:
-- **Python**: Jako główny język programowania do analizy danych.
-- **Pandas**: Do manipulacji i przetwarzania danych.
-- **Plotly**: Do tworzenia interaktywnych wizualizacji.
-- **Seaborn** i **Matplotlib**: Do tworzenia statycznych wykresów.
-- **NumPy**: Do obliczeń numerycznych.
-- **Meta Llama**: Do generowania kodu.
+## Tools Used:
+- **Python**: As the primary programming language for data analysis.
+- **Pandas**: For data manipulation and processing.
+- **Plotly**: For creating interactive visualizations.
+- **Seaborn** and **Matplotlib**: For creating static charts.
+- **NumPy**: For numerical computations.
+- **Meta Llama**: For code generation.
 
-## Kluczowe wnioski:
+## Key Insights:
 
-### 1. Kraje skandynawskie są najszczęśliwsze
-- **Dania**, **Szwajcaria**, **Islandia**, **Norwegia** i **Finlandia** zajmują pierwsze miejsca w rankingu szczęścia. Kraje te charakteryzują się wysokim PKB per capita, silnym wsparciem społecznym oraz wysoką oczekiwaną długością życia.
+### 1. Scandinavian countries are the happiest
+- **Denmark**, **Switzerland**, **Iceland**, **Norway**, and **Finland** occupy the top spots in the happiness ranking. These countries are characterized by high GDP per capita, strong social support, and high life expectancy.
 
-### 2. PKB per capita ma silny wpływ na poziom szczęścia
-- Analiza wykazała, że kraje o wyższym PKB per capita mają tendencję do wyższego poziomu szczęścia. Wskaźnik ten jest jednym z najważniejszych czynników wpływających na ogólny poziom szczęścia.
+### 2. GDP per capita has a strong influence on happiness levels
+- The analysis revealed that countries with higher GDP per capita tend to have higher happiness levels. This indicator is one of the most important factors influencing overall happiness.
 
-### 3. Hojność i poziom korupcji mają mniejszy wpływ
-- Chociaż hojność i niski poziom korupcji są ważne, ich wpływ na ogólny poziom szczęścia jest znacznie mniejszy niż PKB per capita czy oczekiwana długość życia.
+### 3. Generosity and corruption levels have a lesser impact
+- Although generosity and low corruption levels are important, their impact on overall happiness is significantly smaller than GDP per capita or life expectancy.
 
-### 4. Afryka Subsaharyjska liderem poziomu szczęścia
-- Dzieląc wszystkie kraje na regiony okazuje się, że **Afryka Subsaharyjska** ma największy poziom szczęścia.
+### 4. Sub-Saharan Africa leads in happiness levels
+- When dividing all countries into regions, it turns out that **Sub-Saharan Africa** has the highest level of happiness.
