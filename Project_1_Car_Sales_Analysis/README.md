@@ -1,30 +1,28 @@
-# Analiza sprzedaży samochodów - Kaggle Car Sales Dataset
+# Car Sales Analysis - Kaggle Car Sales Dataset
 
-## Opis projektu:
-Ten projekt to analiza danych dotyczących sprzedaży samochodów. 
-Zawiera informacje o producentach, modelach, cenach, wartości odsprzedaży, efektywności paliwowej, mocy silnika i innych parametrach technicznych. 
+## Project Description:
+This project involves the analysis of car sales data. It includes information about manufacturers, models, prices, resale values, fuel efficiency, engine power, and other technical parameters.
 
-## Cel
-Głównym celem było zbadanie, które marki i modele są najbardziej opłacalne oraz jakie czynniki wpływają na wartość odsprzedaży.
+## Objective
+The main goal was to investigate which brands and models are the most profitable and what factors influence resale value.
 
-## Użyte narzędzia
-- **Excel**: Do analizy danych i tworzenia wizualizacji.
-- **Formuły Excel**: Do obliczeń (np. Retention %)
+## Tools Used
+- **Excel**: For data analysis and creating visualizations. .
 
-## Kluczowe wnioski
+## Key Insights
 
-### 1. Marki premium mają wyższą wartość odsprzedaży
-- Marki premium, takie jak **Porsche**, **Mercedes-Benz** i **Lexus**, mają znacznie wyższe wartości odsprzedaży niż marki ekonomiczne.
+### 1. Premium brands have higher resale values
+- Premium brands such as **Porsche**, **Mercedes-Benz**, and **Lexus** have significantly higher resale values compared to economy brands.
 
-### 2. Toyota dominuje pod względem retencji i sprzedaży
-- **Toyota Celica** ma najwyższy procent retencji (Retention %), co oznacza, że zachowuje swoją wartość lepiej niż inne modele.
-- **Toyota Corolla** również ma wysoki procent retencji, co potwierdza jej popularność i opłacalność.
-- **Toyota Camry** jest najlepiej sprzedającym się modelem, a **Toyota Corolla**  również ma wysoką sprzedaż, co pokazuje, że Toyota dobrze radzi sobie w segmencie samochodów osobowych.
+### 2. Toyota dominates in retention and sales
+- The **Toyota Celica** has the highest retention percentage (Retention %), meaning it retains its value better than other models.  
+- The **Toyota Corolla** also has a high retention percentage, confirming its popularity and profitability.  
+- The **Toyota Camry** is the best-selling model, **Toyota Corolla** also has high sales, showing that Toyota performs well in the passenger car segment.
 
-### 3. Współczynnik mocy (Power Perf Factor) a marki premium
-- **Porsche** ma najwyższy współczynnik mocy, co potwierdza jego pozycję jako marki sportowej.
-- **Mercedes-Benz** i **BMW** również mają wysokie wartości współczynnika mocy, co wskazuje na ich zaawansowane technologie silnikowe.
+### 3. Power Performance Factor and premium brands
+- **Porsche** has the highest Power Performance Factor, reinforcing its position as a sports brand.  
+- **Mercedes-Benz** and **BMW** also have high Power Performance Factor values, indicating their advanced engine technologies.
 
-### 4. Najbardziej opłacalne modele
-- **Ford F-Series**, **Chevrolet Cavalier** i **Honda Civic** są najlepiej sprzedającymi się modelami, co pokazuje ich popularność na rynku.
-- Modele premium, takie jak **Porsche 911** i **Mercedes S-Class**, mają wysoką wartość odsprzedaży, ale niższą sprzedaż jednostkową.
+### 4. Most profitable models
+- The **Ford F-Series**, **Chevrolet Cavalier**, and **Honda Civic** are the best-selling models, demonstrating their market popularity.  
+- Premium models such as the **Porsche 911** and **Mercedes S-Class** have high resale values but lower unit sales.
