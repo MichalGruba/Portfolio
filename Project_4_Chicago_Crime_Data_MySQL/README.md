@@ -1,39 +1,39 @@
 # Chicago Crime Database Project
 
-## Opis projektu
+## Project Description
 
-Ten projekt zawiera bazę danych `Mysql_Learners`, która przechowuje informacje dotyczące przestępstw w Chicago, szkół publicznych oraz warunków społeczno-ekonomicznych w różnych obszarach miasta. Baza danych zawiera tabele z danymi o przestępstwach, szkołach, warunkach społeczno-ekonomicznych oraz procedurę składowaną do aktualizacji wyników liderów szkół.
+This project includes the `Chicago_Crime_Data` database, which stores information about crimes in Chicago, public schools, and socio-economic conditions in various areas of the city. The database contains tables with data on crimes, schools, socio-economic conditions, and a stored procedure for updating school leaders' scores.
 
-## Cel projektu
+## Project Objectives
 
-Głównym celem tego projektu jest:
-1. **Gromadzenie i analiza danych o przestępstwach** w Chicago, aby lepiej zrozumieć trendy przestępczości, lokalizacje o wysokim wskaźniku przestępczości oraz rodzaje przestępstw.
-2. **Zarządzanie danymi szkół publicznych** poprzez aktualizację wyników liderów szkół (`Leaders_Score`) i przypisywanie odpowiednich ikon (`Leaders_Icon`) na podstawie tych wyników.
-3. **Umożliwienie analizy danych** poprzez łatwe wykonywanie zapytań SQL, co pozwala na identyfikację wzorców przestępczości oraz ocenę skuteczności działań prewencyjnych.
+The main objectives of this project are:
+1. **Collecting and analyzing crime data** in Chicago to better understand crime trends, high-crime locations, and types of crimes.
+2. **Managing public school data** by updating school leaders' scores (`Leaders_Score`) and assigning appropriate icons (`Leaders_Icon`) based on these scores.
+3. **Enabling data analysis** through easy SQL queries, allowing for the identification of crime patterns and the evaluation of preventive measures' effectiveness.
 
-## Użyte narzędzia:
-- **MySQL(phpmyadmin)**
+## Tools Used:
+- **MySQL (phpMyAdmin)**: For writing queries and managing the database.
 
-## Struktura bazy danych
+## Database Structure
 
-### Tabele
+### Tables
 
 1. **chicago_crime**  
-   - Tabela zawierająca informacje o przestępstwach w Chicago.  
-   - Kolumny: `ID`, `CASE_NUMBER`, `DATE`, `BLOCK`, `IUCR`, `PRIMARY_TYPE`, `DESCRIPTION`, `LOCATION_DESCRIPTION`, `ARREST`, `DOMESTIC`, `BEAT`, `DISTRICT`, `WARD`, `COMMUNITY_AREA_NUMBER`, `FBICODE`, `X_COORDINATE`, `Y_COORDINATE`, `YEAR`, `LATITUDE`, `LONGITUDE`, `LOCATION`.
+   - Table containing information about crimes in Chicago.  
+   - Columns: `ID`, `CASE_NUMBER`, `DATE`, `BLOCK`, `IUCR`, `PRIMARY_TYPE`, `DESCRIPTION`, `LOCATION_DESCRIPTION`, `ARREST`, `DOMESTIC`, `BEAT`, `DISTRICT`, `WARD`, `COMMUNITY_AREA_NUMBER`, `FBICODE`, `X_COORDINATE`, `Y_COORDINATE`, `YEAR`, `LATITUDE`, `LONGITUDE`, `LOCATION`.
 
 2. **chicago_public_schools**  
-   - Tabela zawierająca informacje o szkołach publicznych w Chicago.  
-   - Kolumny: `School_ID`, `Leaders_Score`, `Leaders_Icon`.
+   - Table containing information about public schools in Chicago.  
+   - Columns: `School_ID`, `Leaders_Score`, `Leaders_Icon`.
 
 3. **chicago_socioeconomic_data**  
-   - Tabela zawierająca dane dotyczące warunków społeczno-ekonomicznych w różnych obszarach Chicago.  
-   - Kolumny: `Community_Area_Number`, `Community_Area_Name`, `Percent_of_Housing_Crowded`, `Percent_Households_Below_Poverty`, `Percent_Aged_16_Unemployed`, `Percent_Aged_25_Without_Diploma`, `Percent_Aged_Under_18_Over_64`, `Per_Capita_Income`, `Hardship_Index`.
-  
-### Procedury składowane
+   - Table containing data on socio-economic conditions in various areas of Chicago.  
+   - Columns: `Community_Area_Number`, `Community_Area_Name`, `Percent_of_Housing_Crowded`, `Percent_Households_Below_Poverty`, `Percent_Aged_16_Unemployed`, `Percent_Aged_25_Without_Diploma`, `Percent_Aged_Under_18_Over_64`, `Per_Capita_Income`, `Hardship_Index`.
+
+### Stored Procedures
 
 1. **UPDATE_LEADERS_SCORE**  
-   - Procedura składowana, która aktualizuje wynik liderów szkoły (`Leaders_Score`) oraz przypisuje odpowiednią ikonę (`Leaders_Icon`) na podstawie wyniku.
+   - Stored procedure that updates the school leaders' score (`Leaders_Score`) and assigns an appropriate icon (`Leaders_Icon`) based on the score.
 
    ```sql
    CREATE DEFINER=`root`@`%` PROCEDURE `UPDATE_LEADERS_SCORE` (IN `in_School_ID` INT, IN `in_Leader_Score` INT)   
@@ -70,21 +70,16 @@ Głównym celem tego projektu jest:
        COMMIT;
    END
 
-## Kluczowe wnioski:
+## Key Insights:
 
-### 1. Trendy przestępczości:
-- Najczęściej występującym typem przestępstwa jest **kradzież (THEFT)**, szczególnie w obszarach o wysokim natężeniu ruchu, takich jak centra handlowe, ulice i parkingi.
+### 1. Crime Trends:
+- The most common type of crime is **theft (THEFT)**, especially in high-traffic areas such as shopping centers, streets, and parking lots.
+- Crimes related to **domestic violence (DOMESTIC)** account for a significant portion of reports, indicating the need for increased preventive measures in this area.
 
-- Przestępstwa związane z **przemocą domową (DOMESTIC)** stanowią znaczącą część zgłoszeń, co wskazuje na potrzebę zwiększenia działań prewencyjnych w tym obszarze.
+### 2. High-Crime Locations:
+- Areas with high crime rates are mainly **downtown** and surrounding **densely populated neighborhoods**.
+- Crimes often occur near **subway stations, bus stops, and public parks**.
 
-### 2. Lokalizacje o wysokim wskaźniku przestępczości:
-- Obszary o wysokim wskaźniku przestępczości to głównie **centrum miasta** oraz okoliczne **dzielnice o dużej gęstości zaludnienia**.
-
-- Przestępstwa często występują w pobliżu **stacji metra, przystanków autobusowych oraz parków publicznych.**
-
-### 3. Skuteczność działań policyjnych:
-- **Wskaźnik aresztowań (ARREST)** jest stosunkowo niski w przypadku przestępstw takich jak **kradzież i uszkodzenie mienia**, co sugeruje potrzebę zwiększenia patroli policyjnych w tych obszarach.
-
-- W przypadku przestępstw związanych z **narkotykami (NARCOTICS)** wskaźnik aresztowań jest wyższy, co wskazuje na skuteczność działań policji w tym obszarze.
-
-
+### 3. Effectiveness of Police Actions:
+- The **arrest rate (ARREST)** is relatively low for crimes such as **theft and property damage**, suggesting the need for increased police patrols in these areas.
+- For **drug-related crimes (NARCOTICS)**, the arrest rate is higher, indicating the effectiveness of police actions in this area.
